@@ -1,0 +1,220 @@
+/* GENERAL */
+h2, h3 {
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, p {
+    color: #353639;
+}
+
+a {
+    text-decoration: none;
+    color: #353639;
+}
+
+ul {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+#page_block {
+    width: 900px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+#dotfromtitle {
+    font-size: 1.4em;
+    color: #FF8000;
+}
+
+body {
+    background:  url("images/main.jpg"), url("images/grey-background-wallpaper-23.jpg"), url("images/2480x3508-davys-grey-solid-color-background.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: 105px, 930px, 1600px;
+    background-size: 100% 420px, 100% 330px;
+}
+
+/* NAV */
+#navigation ul {
+    display: flex;
+}
+
+#navigation li {
+    margin: 15px;
+}
+
+/* BANNER SECTION */
+#banner {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+}
+
+#this_way_button {
+    background-color: #FF8000;
+    color: white;
+    border-radius: 0.1em;
+    padding: 9px;
+    width: 70px;
+    text-align: center;
+}
+
+#tailor_made_trip {
+    font-weight: bold;
+}
+
+#banner h2 {
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* STEPS SECTION */
+#steps {
+    margin-top: 40px;
+    margin-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#steps img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#steps h2 {
+    text-align: center;
+}
+
+#steps p {
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    opacity: 0.8;
+}
+
+/* OFFERS SECTION */
+#offers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+
+#offers h3 {
+    font-size: 1.5em;
+}
+
+#travel_offer_1 {
+    border-radius: 20px;
+    display: flex;
+    margin-right: 11px;
+
+    height: 250px;
+    width: 500px;
+
+    background: url("images/article-image-1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#description_block_offer_1 {
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    background: #FDFDFE;
+    opacity: 0.9;
+}
+
+#travel_offer_2 {
+    border-radius: 20px;
+    display: flex;
+    margin-left: 11px;
+
+    height: 250px;
+    width: 500px;
+
+    background: url("images/article-image-2.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#description_block_offer_2 {
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    background: #FDFDFE;
+    opacity: 0.9;
+}
+
+.more_infos_button {
+    background-color: #FF8000;
+    color: white;
+    border-radius: 0.1em;
+    padding: 5px;
+    width: 130px;
+    margin: auto;
+}
+
+/* FORM SECTION */
+#contact_us_section {
+    margin-bottom: 140px;
+}
+
+#form_section {
+    text-align: center;
+}
+
+#form_section h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.8em;
+}
+
+#form_section_separator {
+    margin-top: 0px;
+    color: #50C4E4;
+}
+
+#form label{
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#form_validation {
+    background-color: #00A9E3;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 15px;
+    border: none;
+}
+
+.form_titles {
+    margin-right: 4px;
+}
+
+/* FOOTER */
+#footer_logo {
+    text-align: center;
+}
+
+#footer_logo h1 {
+    color: white;
+}
+
+#footer_logo h4 {
+    color: grey;
+    font-weight: bold;
+}
+
+#dot_from_title_footer {
+    font-size: 1.4em;
+    color: #FF8000;
+}
