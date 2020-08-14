@@ -1,15 +1,16 @@
 /* GENERAL */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
 h2, h3 {
     text-transform: uppercase;
 }
 
-h1, h2, h3, h4, p {
-    color: #353639;
-}
-
-a {
+h1, h2, h3, h4, p, a {
+    color: #444;
     text-decoration: none;
-    color: #353639;
 }
 
 ul {
@@ -17,7 +18,12 @@ ul {
     text-transform: uppercase;
 }
 
-#page_block {
+.orange_dot {
+    font-size: 60px;
+    color: #FF8000;
+}
+
+.wrapper {
     width: 900px;
     margin: auto;
 }
@@ -26,31 +32,34 @@ ul {
 header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-#dotfromtitle {
-    font-size: 1.4em;
-    color: #FF8000;
-}
-
-body {
-    background:  url("images/main.jpg"), url("images/grey-background-wallpaper-23.jpg"), url("images/2480x3508-davys-grey-solid-color-background.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position-y: 105px, 930px, 1600px;
-    background-size: 100% 420px, 100% 330px;
+header h1 {
+    line-height: 100%;
+    height: 60px;
+    font-size: 45px;
+    font-family: 'Crete Round', Arial, Helvetica, sans-serif;
 }
 
 /* NAV */
-#navigation ul {
+nav ul {
+    padding-inline-start: 0px;
     display: flex;
 }
 
-#navigation li {
+nav li {
+    font-weight: bold;
     margin: 15px;
+}
+
+nav a:hover {
+    color: #FF8000;
 }
 
 /* BANNER SECTION */
 #banner {
+    background: url("images/main.jpg") center;
     display: flex;
     flex-direction: column;
     height: 450px;
@@ -58,31 +67,25 @@ body {
     justify-content: center;
 }
 
-#this_way_button {
+#banner a {
     background-color: #FF8000;
     color: white;
-    border-radius: 0.1em;
-    padding: 9px;
+    border-radius: 2px;
+    padding: 9px 18px;
     width: 70px;
     text-align: center;
 }
 
-#tailor_made_trip {
-    font-weight: bold;
-}
-
 #banner h2 {
     font-weight: normal;
-    font-size: 40px;
+    font-size: 47px;
     text-align: center;
 }
 
 /* STEPS SECTION */
 #steps {
-    margin-top: 40px;
-    margin-bottom: 140px;
     display: flex;
-    justify-content: space-between;
+    height: 450px;
 }
 
 #steps img {
@@ -102,11 +105,17 @@ body {
     opacity: 0.8;
 }
 
+#destination {
+    display: flex;
+}
+
 /* OFFERS SECTION */
 #offers {
     display: flex;
+    height: 450px;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 140px;
+    background: url("images/grey-background-wallpaper-23.jpg") center;
 }
 
 #offers h3 {
@@ -119,14 +128,14 @@ body {
     margin-right: 11px;
 
     height: 250px;
-    width: 500px;
+    width: 460px;
 
     background: url("images/article-image-1.jpg") no-repeat;
-    background-size: 100% 100%;
 }
 
 #description_block_offer_1 {
-    border-radius: 20px;
+    border-top-left-radius: 19px;
+    border-bottom-left-radius: 20px;
     width: 50%;
     text-align: center;
     background: #FDFDFE;
@@ -139,52 +148,60 @@ body {
     margin-left: 11px;
 
     height: 250px;
-    width: 500px;
+    width: 460px;
 
     background: url("images/article-image-2.jpg") no-repeat;
-    background-size: 100% 100%;
 }
 
 #description_block_offer_2 {
-    border-radius: 20px;
+    border-top-left-radius: 8%;
+    border-bottom-left-radius: 8%;
     width: 50%;
     text-align: center;
     background: #FDFDFE;
     opacity: 0.9;
 }
 
-.more_infos_button {
+.more_infos_link {
+    display: inline-block;
+    line-height: 40px;
     background-color: #FF8000;
     color: white;
-    border-radius: 0.1em;
-    padding: 5px;
+    border-radius: 5px;
     width: 130px;
-    margin: auto;
 }
 
 /* FORM SECTION */
 #contact_us_section {
-    margin-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
 }
 
-#form_section {
-    text-align: center;
-}
-
-#form_section h3 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+#contact_us_section h3 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
     font-size: 1.8em;
 }
 
 #form_section_separator {
-    margin-top: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
     color: #50C4E4;
 }
 
-#form label{
+form label{
     font-weight: bold;
-    margin-left: 20px;
+}
+
+form input {
+    margin-left: 4px;
+}
+
+form input#nom {
+    margin-right: 20px;
 }
 
 #form_validation {
@@ -196,25 +213,18 @@ body {
     border: none;
 }
 
-.form_titles {
-    margin-right: 4px;
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    background: url("images/2480x3508-davys-grey-solid-color-background.jpg") center;
 }
 
-/* FOOTER */
 #footer_logo {
     text-align: center;
 }
 
 #footer_logo h1 {
     color: white;
-}
-
-#footer_logo h4 {
-    color: grey;
-    font-weight: bold;
-}
-
-#dot_from_title_footer {
-    font-size: 1.4em;
-    color: #FF8000;
 }

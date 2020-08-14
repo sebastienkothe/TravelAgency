@@ -1,96 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crete+Round">
+        <meta charset="utf-8">
         <title>Travel Agency</title>
     </head>
 
     <body>
-        <div id="page_block">
+        <header>
+            <h1>Travel Agency<span class="orange_dot">.</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#banner">Accueil</a></li>
+                    <li><a href="#steps">Destination</a></li>
+                    <li><a href="#offers">Circuits</a></li>
+                    <li><a href="#contact_us_section">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <header>
-                <div id="title">
-                    <h1>Travel Agency<span id="dotfromtitle">.</span></h1>
-                </div>
+        <section id="banner">
+            <h2>Organisez votre<br><strong>voyage sur mesure</strong></h2>
+            <a href="#">Par ici</a>
+        </section>
 
-                <div id="navigation">
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Destination</a></li>
-                        <li><a href="#">Circuits</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </header>
+        <section id="steps">
+            <div class="wrapper">
+                <div id="destination">
+                    <div id="plan">
+                        <img src="images/steps-icon-1.png" alt="Pen image">
+                        <h2>Planifier</h2>
+                        <p>Confiez-nous vos rêves d'évasion. Vous souhaitez vous rendre en Syrie lors des bombardements ? Pas de soucis !</p>
+                    </div>
 
-            <section id="banner">
-                <h2>Organisez votre<br><span id="tailor_made_trip">voyage sur mesure</span></h2>
-                <div id="this_way_button">Par ici</div>
-            </section>
+                    <div id="organize">
+                        <img src="images/steps-icon-2.png" alt="Pen image">
+                        <h2>Organiser</h2>
+                        <p>Bénéficier de l'expertise de nos spécialistes. Jacob est là pour vous aider si vous souhaitez chasser des crocodiles.</p>
+                    </div>
 
-            <section id="steps">
-                <div id="plan">
-                    <img src="images/steps-icon-1.png" alt="Pen image">
-                    <h2>Planifier</h2>
-                    <p>Confiez-nous vos rêves d'évasion. Vous souhaitez vous rendre en Syrie lors des bombardements ? Pas de soucis !</p>
-                </div>
-
-                <div id="organize">
-                    <img src="images/steps-icon-2.png" alt="Pen image">
-                    <h2>Organiser</h2>
-                    <p>Bénéficier de l'expertise de nos spécialistes. Jacob est là pour vous aider si vous souhaitez chasser des crocodiles.</p>
-                </div>
-
-                <div id="travel">
-                    <img src="images/steps-icon-3.png" alt="Pen image">
-                    <h2>Voyager</h2>
-                    <p>Nous nous chargeons d'assurer votre sécurité. La priorié pour nous c'est que vous rentriez en un seul morceau.</p>
-                </div>
-            </section>
-
-            <section id="offers">
-                <div id="travel_offer_1">
-                    <div id="description_block_offer_1">
-                        <h3>Partez en famille</h3>
-                        <p>Offrez le meilleur à ceux que vous aimez !</p>
-                        <div class="more_infos_button">Plus d'infos</div>
+                    <div id="travel">
+                        <img src="images/steps-icon-3.png" alt="Pen image">
+                        <h2>Voyager</h2>
+                        <p>Nous nous chargeons d'assurer votre sécurité. La priorié pour nous c'est que vous rentriez en un seul morceau.</p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div id="travel_offer_2">
-                    <div id="description_block_offer_2">
-                        <h3>Envie de s'évader</h3>
-                        <p>L'évasion à l'état pur ! N'hésitez plus.</p>
-                        <div class="more_infos_button">Plus d'infos</div>
-                    </div>
+        <section id="offers">
+            <div id="travel_offer_1">
+                <div id="description_block_offer_1">
+                    <h3>Partez en famille</h3>
+                    <p>Offrez le meilleur<br>à ceux que vous aimez !</p>
+                    <a class="more_infos_link" href="#">Plus d'infos</a>
                 </div>
-            </section>
+            </div>
 
-            <section id="contact_us_section">
-                <div id="form_section">
-                    <h3>Contactez-nous</h3>
-                    <p id="form_section_separator">_____________________________</p>
-                    <p>Chez Travel Agency nous prenons vos requêtes au sérieux.</p>
-                        <div id="form">
-                            <form>
-                                <label class="form_titles" for"nom">Nom</label>
-                                <input type="text" name="nom" id="nom" placeholder="Votre nom">
-                                <label class="form_titles" for"email">Email</label>
-                                <input type="email" name="email" id="email" placeholder="Votre mail">
-                                <input id="form_validation" type="submit" value="OK">
-                            </form>
-                        </div>
+            <div id="travel_offer_2">
+                <div id="description_block_offer_2">
+                    <h3>Envie de s'évader</h3>
+                    <p>L'évasion à l'état pur !<br>N'hésitez plus.</p>
+                    <a class="more_infos_link" href="#">Plus d'infos</a>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <footer>
-                <div id="footer_logo">
-                    <h1>Travel Agency<span id="dot_from_title_footer">.</span></h1>
-                    <h4>Copyright 2016</h4>
+        <section id="contact_us_section">
+            <h3>Contactez-nous</h3>
+            <p id="form_section_separator">_____________________________</p>
+            <p>Chez Travel Agency nous prenons vos requêtes au sérieux.</p>
+                <div id="form">
+                    <form>
+                        <label class="form_titles" for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" placeholder="Votre nom">
+                        <label class="form_titles" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Votre mail">
+                        <input id="form_validation" type="submit" value="OK">
+                    </form>
                 </div>
-            </footer>
+        </section>
 
-        </div>
+        <footer>
+            <div id="footer_logo">
+                <h1>Travel Agency<span class="orange_dot">.</span></h1>
+                <h4>Copyright 2016</h4>
+            </div>
+        </footer>
     </body>
 </html>
